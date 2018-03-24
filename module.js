@@ -1,3 +1,7 @@
+/*!
+ * rate-map | ISC (c) Shinnosuke Watanabe
+ * https://github.com/shinnn/rate-map
+*/
 import appendType from 'append-type';
 
 var paramNames = ['start', 'end'];

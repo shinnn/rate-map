@@ -1,6 +1,6 @@
 # rate-map
 
-[![NPM version](https://img.shields.io/npm/v/rate-map.svg)](https://www.npmjs.com/package/rate-map)
+[![npm version](https://img.shields.io/npm/v/rate-map.svg)](https://www.npmjs.com/package/rate-map)
 [![Build Status](https://travis-ci.org/shinnn/rate-map.svg?branch=master)](https://travis-ci.org/shinnn/rate-map)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/rate-map.svg)](https://coveralls.io/r/shinnn/rate-map)
 
@@ -16,7 +16,7 @@ rateMap(0.5, -100, 100); //=> 0
 
 ## Installation
 
-[Use npm.](https://docs.npmjs.com/cli/install)
+[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/getting-started/what-is-npm).
 
 ```
 npm install rate-map
@@ -43,4 +43,4 @@ rateMap(1, 5, 5); //=> 5
 
 ## License
 
-[Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/deed)
+[ISC License](./LICENSE) © 2018 Shinnosuke Watanabe

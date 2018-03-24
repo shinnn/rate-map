@@ -1,3 +1,7 @@
+/*!
+ * rate-map | ISC (c) Shinnosuke Watanabe
+ * https://github.com/shinnn/rate-map
+*/
 'use strict';
 
 var appendType = require('append-type');
