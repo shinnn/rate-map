@@ -1,6 +1,6 @@
 {
 	"name": "rate-map",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Map a number in the range of 0-1 to a new value with a given range",
 	"repository": "shinnn/rate-map",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
