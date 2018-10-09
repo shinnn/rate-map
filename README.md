@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/rate-map.svg)](https://www.npmjs.com/package/rate-map)
 [![Build Status](https://travis-ci.org/shinnn/rate-map.svg?branch=master)](https://travis-ci.org/shinnn/rate-map)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/rate-map.svg)](https://coveralls.io/r/shinnn/rate-map)
+[![Coverage Status](https://img.shields.io/coveralls/shinnn/rate-map.svg)](https://coveralls.io/github/shinnn/rate-map)
 
 Map a number in the range of `0`-`1` to a new value with a given range
 

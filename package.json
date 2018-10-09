@@ -5,10 +5,10 @@
 	"repository": "shinnn/rate-map",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
 	"scripts": {
-		"prebuild": "eslint --fix --format=codeframe index.mjs test.js",
+		"prebuild": "eslint .",
 		"build": "rollup --config=node:module",
 		"pretest": "npm run-script build",
-		"test": "nyc --reporter=html --reporter=text node test.js"
+		"test": "nyc node test.js"
 	},
 	"license": "ISC",
 	"module": "index.mjs",
@@ -32,14 +32,18 @@
 		"append-type": "^1.0.1"
 	},
 	"devDependencies": {
-		"@shinnn/eslint-config": "^5.4.0",
-		"eslint": "^4.19.1",
-		"nyc": "^11.6.0",
-		"rollup": "^0.57.1",
-		"rollup-config-module": "^2.0.0",
-		"tape": "^4.9.0"
+		"@shinnn/eslint-config": "^6.7.1",
+		"eslint": "^5.6.1",
+		"nyc": "^13.0.1",
+		"nyc-config-common": "^1.0.0",
+		"rollup": "^0.66.5",
+		"rollup-config-module": "^2.0.1",
+		"tape": "^4.9.1"
 	},
 	"eslintConfig": {
 		"extends": "@shinnn"
+	},
+	"nyc": {
+		"extends": "nyc-config-common"
 	}
 }

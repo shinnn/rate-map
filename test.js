@@ -18,43 +18,43 @@ test('rateMap()', t => {
 
 	t.throws(
 		() => rateMap('Hi', 0, 0),
-		/^TypeError.*Expected the first argument to be a number \(0 ~ 1\), but got Hi \(string\)\./,
+		/^TypeError.*Expected the first argument to be a number \(0 ~ 1\), but got Hi \(string\)\./u,
 		'should throw an error when the first argument is not a number.'
 	);
 
 	t.throws(
 		() => rateMap(Infinity, 0, 0),
-		/^RangeError.*Expected the first argument to be a finite number \(0 ~ 1\), but got Infinity\./,
+		/^RangeError.*Expected the first argument to be a finite number \(0 ~ 1\), but got Infinity\./u,
 		'should throw an error when the first argument is an infinite number.'
 	);
 
 	t.throws(
 		() => rateMap(NaN, 0, 0),
-		/^RangeError.*Expected the first argument to be a finite number \(0 ~ 1\), but got NaN\./,
+		/^RangeError.*Expected the first argument to be a finite number \(0 ~ 1\), but got NaN\./u,
 		'should throw an error when the first argument is NaN.'
 	);
 
 	t.throws(
 		() => rateMap(-5, 0, 0),
-		/^RangeError.*Expected the first argument to be a number \(0 ~ 1\), but got a negative number -5\./,
+		/^RangeError.*Expected the first argument to be a number \(0 ~ 1\), but got a negative number -5\./u,
 		'should throw an error when the first argument is a negative number.'
 	);
 
 	t.throws(
 		() => rateMap(2, 0, 0),
-		/^RangeError.*Expected the first argument to be a number \(0 ~ 1\), but got a too large number 2\./,
+		/^RangeError.*Expected the first argument to be a number \(0 ~ 1\), but got a too large number 2\./u,
 		'should throw an error when the first argument exceeds 1.'
 	);
 
 	t.throws(
 		() => rateMap(0, null, 0),
-		/^TypeError.*Expected `start` argument to be a number, but got null\./,
+		/^TypeError.*Expected `start` argument to be a number, but got null\./u,
 		'should throw an error when the range value is not a number.'
 	);
 
 	t.throws(
 		() => rateMap(0, 0, -Infinity),
-		/^RangeError.*Expected `end` argument to be a finite number, but got -Infinity\./,
+		/^RangeError.*Expected `end` argument to be a finite number, but got -Infinity\./u,
 		'should throw an error when the range value is not finite.'
 	);
 

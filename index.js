@@ -9,7 +9,7 @@ var appendType = require('append-type');
 
 var paramNames = ['start', 'end'];
 
-function rateMap(val, start, end) {
+module.exports = function rateMap(val, start, end) {
 	if (typeof val !== 'number') {
 		throw new TypeError('Expected the first argument to be a number (0 ~ 1), but got ' + appendType(val) + '.');
 	}
@@ -40,5 +40,3 @@ function rateMap(val, start, end) {
 
 	return start + val * (end - start);
 }
-
-module.exports = rateMap;
