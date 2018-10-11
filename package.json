@@ -1,6 +1,6 @@
 {
 	"name": "rate-map",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Map a number in the range of 0-1 to a new value with a given range",
 	"repository": "shinnn/rate-map",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
@@ -36,7 +36,7 @@
 		"eslint": "^5.6.1",
 		"nyc": "^13.0.1",
 		"nyc-config-common": "^1.0.0",
-		"rollup": "^0.66.5",
+		"rollup": "^0.66.6",
 		"rollup-config-module": "^2.0.1",
 		"tape": "^4.9.1"
 	},
