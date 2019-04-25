@@ -1,7 +1,5 @@
-'use strict';
-
-const rateMap = require('.');
-const test = require('tape');
+import rateMap from '.';
+import test from 'tape';
 
 test('rateMap()', t => {
 	t.equal(

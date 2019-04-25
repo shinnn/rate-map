@@ -9,7 +9,7 @@
 		"prebuild": "eslint .",
 		"build": "rollup --config=node:module",
 		"pretest": "npm run-script build",
-		"test": "nyc node test.js"
+		"test": "nyc node --experimental-modules --es-module-specifier-resolution=node test.mjs"
 	},
 	"files": [
 		"index.js",
